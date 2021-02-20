@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/SearchImageFragment">
+
+    <fragment
+        android:id="@+id/SearchImageFragment"
+        android:name="com.pixabay.ui.searchimage.SearchImageFragment"
+        android:label="@string/search_image_fragment"
+        tools:layout="@layout/fragment_search_image">
+    </fragment>
+
+</navigation>

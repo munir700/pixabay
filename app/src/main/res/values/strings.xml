@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Pixabay</string>
+    <string name="search_image_fragment">Search Image Fragment</string>
+
+    <string name="no_data">No Photo Data Found</string>
+    <string name="no_data_found">No data found</string>
+    <string name="image_search">Search</string>
+
+</resources>
