@@ -1,4 +1,4 @@
-package com.pixabay.ui.searchimage
+package com.data.enums
 
 import com.pixabay.utils.ImageConstants
 
@@ -8,10 +8,4 @@ enum class ImageType(val type: String) {
     ILLUSTRATION(ImageConstants.ILLUSTRATION),
     VECTOR(ImageConstants.VECTOR),
     DEFAULT(ImageConstants.DEFAULT)
-}
-
-enum class Status {
-    SUCCESS,
-    ERROR,
-    LOADING
 }

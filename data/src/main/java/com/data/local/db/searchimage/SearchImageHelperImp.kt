@@ -13,8 +13,8 @@ abstract class SearchImageHelperImp : BaseDbHelper(), SearchImageHelper {
         mAppDatabase?.searchImageDao()?.insertAll(photos)
     }
 
-    override fun searchImageByTitle(searchQuery: String): List<Photo>? {
-        return mAppDatabase?.searchImageDao()?.searchImageByTitle(searchQuery)
+    override fun searchImageByTags(searchQuery: String): List<Photo>? {
+        return mAppDatabase?.searchImageDao()?.searchImageByTags(searchQuery)
     }
 
     override fun searchImagesDataSource(): DataSource.Factory<Int, Any>? {

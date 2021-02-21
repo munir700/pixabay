@@ -1,9 +1,11 @@
 package com.data.repository
 
 import androidx.paging.DataSource
+import com.data.enums.ImageType
 import com.data.local.models.Photo
 import com.data.local.models.PhotoSearchResponse
 import com.data.manager.DataManager
+import com.data.utils.ITEM_PER_PAGE
 import retrofit2.Response
 import javax.inject.Inject
 
@@ -16,16 +18,16 @@ class SearchRepository @Inject constructor(private val dataManager: DataManager)
         return dataManager.getDbHelper().searchImagesDataSource()
     }
 
-    fun searchImageByTitle(title: String): List<Any>? {
-        return dataManager.getDbHelper().searchImageByTitle(title)
+    fun searchImageByTag(tag: String): List<Any>? {
+        return dataManager.getDbHelper().searchImageByTags(tag)
     }
 
     suspend fun getSearchImagesRequest(
         apiKey: String,
         q: String,
-        imageType: String,
+        imageType: String = ImageType.ALL.type,
         page: Int,
-        perPage: Int
+        perPage: Int = ITEM_PER_PAGE
     ): Response<PhotoSearchResponse> {
         return dataManager.getApiHelper().searchImages(
             key = apiKey,

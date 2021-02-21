@@ -9,7 +9,7 @@ interface SearchImageHelper {
 
     fun insertImages(photos: List<Photo>)
 
-    fun searchImageByTitle(searchQuery: String): List<Photo>?
+    fun searchImageByTags(searchQuery: String): List<Photo>?
 
     fun searchImagesDataSource(): DataSource.Factory<Int, Any>?
 }

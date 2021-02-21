@@ -5,12 +5,13 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.core.utils.StringUtils
+import com.data.enums.ImageType
 import com.data.local.models.Photo
 import com.data.local.models.PhotoSearchResponse
 import com.data.local.models.State
 import com.data.repository.SearchRepository
 import com.pixabay.BuildConfig
-import com.pixabay.utils.ITEM_PER_PAGE
+import com.data.utils.ITEM_PER_PAGE
 import com.squareup.moshi.Moshi
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
@@ -83,9 +84,7 @@ class SearchImageViewModel @Inject constructor(private val searchRepository: Sea
                 val result = searchRepository.getSearchImagesRequest(
                     BuildConfig.API_KEY,
                     query,
-                    ImageType.ALL.type,
-                    pageNumber,
-                    ITEM_PER_PAGE
+                    page = pageNumber
                 )
                 val apiResponse = result.body()
                 isPerformingQuery = false

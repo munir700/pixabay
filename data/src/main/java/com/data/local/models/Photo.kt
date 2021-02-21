@@ -104,8 +104,4 @@ data class Photo(
     @ColumnInfo(name = "user")
     @Json(name = "user")
     val user: String = ""
-) {
-    fun mapPhotoUrl(): String {
-        return ""
-    }
-}
+)
