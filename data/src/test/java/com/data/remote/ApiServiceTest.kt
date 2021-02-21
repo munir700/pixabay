@@ -3,7 +3,6 @@ package com.data.remote
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.data.enums.ImageType
 import com.data.utils.ITEM_PER_PAGE
-import com.pixabay.utils.ImageConstants
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import kotlinx.coroutines.runBlocking

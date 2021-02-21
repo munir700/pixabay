@@ -5,13 +5,11 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.core.utils.StringUtils
-import com.data.enums.ImageType
 import com.data.local.models.Photo
 import com.data.local.models.PhotoSearchResponse
 import com.data.local.models.State
 import com.data.repository.SearchRepository
 import com.pixabay.BuildConfig
-import com.data.utils.ITEM_PER_PAGE
 import com.squareup.moshi.Moshi
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers

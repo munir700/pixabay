@@ -1,6 +1,6 @@
 package com.data.enums
 
-import com.pixabay.utils.ImageConstants
+import com.data.utils.ImageConstants
 
 enum class ImageType(val type: String) {
     ALL(ImageConstants.ALL),

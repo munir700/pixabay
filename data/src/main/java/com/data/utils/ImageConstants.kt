@@ -1,4 +1,4 @@
-package com.pixabay.utils
+package com.data.utils
 
 object ImageConstants {
     const val ALL = "all"
