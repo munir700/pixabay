@@ -13,7 +13,7 @@ import org.junit.Test
 import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
-class MoviesDaoTest {
+class ImagesDaoTest {
 
     private lateinit var imagesDatabase: AppDatabase
 
